@@ -18,14 +18,26 @@ const ProductWrapper = () => {
     {
       image:
         "https://i.pinimg.com/736x/dd/a6/2a/dda62a139cf181ac45236d3e9203cd8a.jpg",
-      title: "Product 2",
+      title: "Product 3",
+      price: "$120"
+    },
+    {
+      image:
+        "https://i.pinimg.com/736x/dd/a6/2a/dda62a139cf181ac45236d3e9203cd8a.jpg",
+      title: "Product 4",
+      price: "$120"
+    },
+    {
+      image:
+        "https://i.pinimg.com/736x/dd/a6/2a/dda62a139cf181ac45236d3e9203cd8a.jpg",
+      title: "Product 5",
       price: "$120"
     }
   ];
   console.log(fakeData);
   return (
     <div className="product-wrapper">
-      <h2>Products</h2>
+      <h2 className="product-wrapper__title">Products</h2>
       <div className="product-wrapper__container">
         {fakeData.map((item, index) => (
           <ProductItem key={index} product={item} />

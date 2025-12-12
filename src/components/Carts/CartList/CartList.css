@@ -1,0 +1,9 @@
+.cart-list {
+  overflow: scroll;
+  max-height: 70vh;
+  border: 1px solid #ddd;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}

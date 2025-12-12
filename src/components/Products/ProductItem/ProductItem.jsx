@@ -1,8 +1,15 @@
+import { useCart } from "../../../hooks/useCart";
 import "./ProductItem.css";
 
-const ProductItem = ({ key, product }) => {
+const ProductItem = ({ product }) => {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart(product);
+  };
+
   return (
-    <div key={key} className="product-item_container">
+    <div className="product-item_container">
       <img
         src={product.image}
         alt={product.title}
@@ -13,7 +20,9 @@ const ProductItem = ({ key, product }) => {
       <div className="product-item__info">
         <h3 className="product-item__title">{product.title}</h3>
         <p className="product-item__price">{product.price}</p>
-        <button className="product-item__button">Add to Cart</button>
+        <button className="product-item__button" onClick={handleAddToCart}>
+          Add to Cart
+        </button>
       </div>
     </div>
   );

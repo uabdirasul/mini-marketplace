@@ -1,4 +1,5 @@
-.product-wrapper {
+.product-wrapper__title {
+  padding: 1rem;
 }
 
 .product-wrapper__container {
