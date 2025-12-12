@@ -43,3 +43,8 @@
   color: #000;
   cursor: pointer;
 }
+
+.product-item__button:active {
+  transform: scale(0.98);
+  opacity: 0.8;
+}
