@@ -1,9 +1,12 @@
 .product-item_container {
   border-radius: 1rem;
   border: 1px solid #ccc;
-  min-width: 16rem;
+  width: 18rem;
   margin: 0 auto;
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-item_container:hover {
