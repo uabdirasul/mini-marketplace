@@ -16,9 +16,7 @@ const CartItem = ({ item }) => {
     removeFromCart(item.title);
   };
 
-  const itemTotal = (
-    parseFloat(item.price.replace("$", "")) * item.quantity
-  ).toFixed(2);
+  const itemTotal = (parseFloat(item.price) * item.quantity).toFixed(2);
 
   return (
     <div className="cart-item">
