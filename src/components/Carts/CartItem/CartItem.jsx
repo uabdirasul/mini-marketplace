@@ -20,17 +20,19 @@ const CartItem = ({ item }) => {
 
   return (
     <div className="cart-item">
-      <img
-        className="cart-item__img"
-        src={item.image}
-        alt={item.title}
-        width={80}
-        height={80}
-      />
-      <div className="cart-item__details">
-        <h3>{item.title}</h3>
-        <p>Price: {item.price}</p>
-        <p>Subtotal: ${itemTotal}</p>
+      <div className="cart-item__info">
+        <img
+          className="cart-item__img"
+          src={item.image}
+          alt={item.title}
+          width={80}
+          height={80}
+        />
+        <div className="cart-item__details">
+          <h3>{item.title}</h3>
+          <p>Price: {item.price}</p>
+          <p>Subtotal: ${itemTotal}</p>
+        </div>
       </div>
       <div className="cart-item__controls">
         <div className="quantity-controls">
